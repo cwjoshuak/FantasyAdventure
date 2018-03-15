@@ -17,7 +17,7 @@
 					<Add option="-Wall" />
 					<Add option="-std=c++11" />
 					<Add option="-g" />
-					<Add directory="../Character" />
+					<Add directory="../All Files" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
