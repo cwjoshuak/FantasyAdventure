@@ -48,7 +48,6 @@
 		<Unit filename="Character.h" />
 		<Unit filename="Dungeon.h" />
 		<Unit filename="Exceptions.h" />
-		<Unit filename="Game.cbp" />
 		<Unit filename="Generation.h" />
 		<Unit filename="Item.h" />
 		<Unit filename="LinkedList.h" />

@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="../Libs/CharacterLib" prefix_auto="1" extension_auto="1" />
+				<Option output="../libs/CharacterLib" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/Debug/" />
 				<Option type="2" />
@@ -17,7 +17,7 @@
 					<Add option="-Wall" />
 					<Add option="-std=c++11" />
 					<Add option="-g" />
-					<Add directory="../All Files" />
+					<Add directory="../Game" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
