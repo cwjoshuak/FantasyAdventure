@@ -1,7 +1,7 @@
 /*
- 
+
  Implementation file for the Room class.
- 
+
  */
 
 #include "Room.h"
@@ -15,7 +15,7 @@ Room::Room(int row, int col, unsigned char wall)
     //Set row, col, and wall data
     setCoordinates(row, col);
     setWalls(wall);
-    
+
     //Set Monster and RoomObject pointers to NULL
     setMonsterPtr();
     setRoomObjectPtr();
@@ -31,19 +31,19 @@ Room::~Room()
     {
         delete monsterPtr;
     }
-    
+
     if (roomObjectPtr)
     {
         delete roomObjectPtr;
     }
-    
+
     if (!items.empty())
     {
         for (auto i = 0; i < items.size(); i++)
         {
             delete items[i];
         }
-        items.erase(items.begin());
+        items.clear();
     }
 }
 
@@ -188,12 +188,12 @@ bool Room::checkNorth() const
 {
     //Mask: 0000 0001
     const unsigned char MASK = 1;
-    
+
     if (walls & MASK)
     {
         return false;
     }
-    
+
     return true;
 }
 
@@ -207,12 +207,12 @@ bool Room::checkSouth() const
 {
     //Mask: 0000 0010
     const unsigned char MASK = 2;
-    
+
     if (walls & MASK)
     {
         return false;
     }
- 
+
     return true;
 }
 
@@ -226,7 +226,7 @@ bool Room::checkEast() const
 {
     //Mask: 0000 0100
     const unsigned char MASK = 4;
-    
+
     if (walls & MASK)
     {
         return false;
@@ -245,7 +245,7 @@ bool Room::checkWest() const
 {
     //Mask: 0000 1000
     const unsigned char MASK = 8;
-    
+
     if (walls & MASK)
     {
         return false;
@@ -271,7 +271,7 @@ bool Room::contains(string s)
             }
         }
     }
-    
+
     return false;
 }
 
@@ -281,7 +281,7 @@ bool Room::contains(string s)
  *******************************************************************************************/
 Item* Room::removeItem(string anItem)
 {
-    
+
     if (!(items.empty()))
     {
         //Step through the vector and search for the item
@@ -292,7 +292,7 @@ Item* Room::removeItem(string anItem)
             {
                 //If you found the item erase it from the items vector
                 items.erase(it);
-                
+
                 //Return pointer to the item
                 return *it;
             }
@@ -362,9 +362,9 @@ ostream& operator<<(ostream& strm, const Room& room)
         strm <<  "This room is empty.";
         strm << "\n" << endl;
     }
-    
+
     cout << right << setw(100) << "~~~~~~~~~~~~********** **** ********** ~~~~~~~~~~~~" << endl << endl;
-    
+
     return strm;
 }
 
