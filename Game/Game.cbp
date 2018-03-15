@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../libs/libCharacterLib.a" />
+					<Add library="../libs/libDungeonLib.a" />
+					<Add library="../libs/libExceptionLib.a" />
+					<Add library="../libs/libGenerationLib.a" />
+					<Add library="../libs/libItemLib.a" />
+					<Add library="../libs/libMonsterLib.a" />
+					<Add library="../libs/libRoomLib.a" />
+					<Add library="../libs/libRoomObjectLib.a" />
+					<Add directory="../libs" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Character.h" />
+		<Unit filename="Dungeon.h" />
+		<Unit filename="Exceptions.h" />
+		<Unit filename="Game.cbp" />
+		<Unit filename="Generation.h" />
+		<Unit filename="Item.h" />
+		<Unit filename="LinkedList.h" />
+		<Unit filename="Monster.h" />
+		<Unit filename="Room.h" />
+		<Unit filename="RoomObject.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
