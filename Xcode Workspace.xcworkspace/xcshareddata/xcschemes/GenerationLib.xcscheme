@@ -17,7 +17,7 @@
                BlueprintIdentifier = "B24B7DCD205C836200E705D5"
                BuildableName = "libGenerationLib.a"
                BlueprintName = "GenerationLib"
-               ReferencedContainer = "container:Game.xcodeproj">
+               ReferencedContainer = "container:Game/Game.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,7 +50,7 @@
             BlueprintIdentifier = "B24B7DCD205C836200E705D5"
             BuildableName = "libGenerationLib.a"
             BlueprintName = "GenerationLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "B24B7DCD205C836200E705D5"
             BuildableName = "libGenerationLib.a"
             BlueprintName = "GenerationLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

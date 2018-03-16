@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B24B7D69205C7E4200E705D5"
-               BuildableName = "Game"
-               BlueprintName = "Game"
-               ReferencedContainer = "container:Game.xcodeproj">
+               BlueprintIdentifier = "B24B7DA5205C830600E705D5"
+               BuildableName = "libRoomObjectLib.a"
+               BlueprintName = "RoomObjectLib"
+               ReferencedContainer = "container:Game/Game.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7D69205C7E4200E705D5"
-            BuildableName = "Game"
-            BlueprintName = "Game"
-            ReferencedContainer = "container:Game.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -53,16 +44,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7D69205C7E4200E705D5"
-            BuildableName = "Game"
-            BlueprintName = "Game"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DA5205C830600E705D5"
+            BuildableName = "libRoomObjectLib.a"
+            BlueprintName = "RoomObjectLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -72,16 +62,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7D69205C7E4200E705D5"
-            BuildableName = "Game"
-            BlueprintName = "Game"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DA5205C830600E705D5"
+            BuildableName = "libRoomObjectLib.a"
+            BlueprintName = "RoomObjectLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

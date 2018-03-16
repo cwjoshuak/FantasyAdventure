@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B24B7DE5205C837900E705D5"
-               BuildableName = "libExceptionLib.a"
-               BlueprintName = "ExceptionLib"
-               ReferencedContainer = "container:Game.xcodeproj">
+               BlueprintIdentifier = "B24B7DAD205C833A00E705D5"
+               BuildableName = "libMonsterLib.a"
+               BlueprintName = "MonsterLib"
+               ReferencedContainer = "container:Game/Game.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7DE5205C837900E705D5"
-            BuildableName = "libExceptionLib.a"
-            BlueprintName = "ExceptionLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DAD205C833A00E705D5"
+            BuildableName = "libMonsterLib.a"
+            BlueprintName = "MonsterLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7DE5205C837900E705D5"
-            BuildableName = "libExceptionLib.a"
-            BlueprintName = "ExceptionLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DAD205C833A00E705D5"
+            BuildableName = "libMonsterLib.a"
+            BlueprintName = "MonsterLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

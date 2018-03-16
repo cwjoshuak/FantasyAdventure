@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B24B7DBD205C835200E705D5"
-               BuildableName = "libItemLib.a"
-               BlueprintName = "ItemLib"
-               ReferencedContainer = "container:Game.xcodeproj">
+               BlueprintIdentifier = "B24B7DD5205C836A00E705D5"
+               BuildableName = "libDungeonLib.a"
+               BlueprintName = "DungeonLib"
+               ReferencedContainer = "container:Game/Game.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7DBD205C835200E705D5"
-            BuildableName = "libItemLib.a"
-            BlueprintName = "ItemLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DD5205C836A00E705D5"
+            BuildableName = "libDungeonLib.a"
+            BlueprintName = "DungeonLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7DBD205C835200E705D5"
-            BuildableName = "libItemLib.a"
-            BlueprintName = "ItemLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DD5205C836A00E705D5"
+            BuildableName = "libDungeonLib.a"
+            BlueprintName = "DungeonLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B24B7DDD205C836F00E705D5"
-               BuildableName = "libCharacterLib.a"
-               BlueprintName = "CharacterLib"
-               ReferencedContainer = "container:Game.xcodeproj">
+               BlueprintIdentifier = "B24B7DC5205C835C00E705D5"
+               BuildableName = "libRoomLib.a"
+               BlueprintName = "RoomLib"
+               ReferencedContainer = "container:Game/Game.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7DDD205C836F00E705D5"
-            BuildableName = "libCharacterLib.a"
-            BlueprintName = "CharacterLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DC5205C835C00E705D5"
+            BuildableName = "libRoomLib.a"
+            BlueprintName = "RoomLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B24B7DDD205C836F00E705D5"
-            BuildableName = "libCharacterLib.a"
-            BlueprintName = "CharacterLib"
-            ReferencedContainer = "container:Game.xcodeproj">
+            BlueprintIdentifier = "B24B7DC5205C835C00E705D5"
+            BuildableName = "libRoomLib.a"
+            BlueprintName = "RoomLib"
+            ReferencedContainer = "container:Game/Game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
