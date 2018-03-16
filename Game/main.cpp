@@ -34,7 +34,6 @@ void doCommand(const string& command, Character*& c, ifstream&) throw(AdventureE
 
 int main(void)
 {
-    
     ifstream helpFile(HELP_FILE.c_str(), ios::in | ios::binary);
     bool replay = true;
     bool restart = true;

@@ -1,0 +1,1090 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B24B7D81205C7F3500E705D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7D80205C7F3500E705D5 /* main.cpp */; };
+		B24B7DEB205C869700E705D5 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEA205C869700E705D5 /* Character.cpp */; };
+		B24B7DED205C86A100E705D5 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEC205C86A100E705D5 /* Room.cpp */; };
+		B24B7DEF205C86A900E705D5 /* Dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEE205C86A900E705D5 /* Dungeon.cpp */; };
+		B24B7DF1205C86B300E705D5 /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF0205C86B300E705D5 /* Monster.cpp */; };
+		B24B7DF3205C86C200E705D5 /* Generation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF2205C86C200E705D5 /* Generation.cpp */; };
+		B24B7DF4205C86D000E705D5 /* RoomObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7D9B205C81D400E705D5 /* RoomObject.cpp */; };
+		B24B7DF6205C86DF00E705D5 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF5205C86DF00E705D5 /* Item.cpp */; };
+		B24B7DF8205C86E700E705D5 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF7205C86E700E705D5 /* Exceptions.cpp */; };
+		B24B7DF9205C86FF00E705D5 /* RoomObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7D9B205C81D400E705D5 /* RoomObject.cpp */; };
+		B24B7DFA205C870600E705D5 /* RoomObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D76205C7E9D00E705D5 /* RoomObject.h */; };
+		B24B7DFB205C871600E705D5 /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF0205C86B300E705D5 /* Monster.cpp */; };
+		B24B7DFC205C871B00E705D5 /* Monster.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D7C205C7E9E00E705D5 /* Monster.h */; };
+		B24B7DFE205C872A00E705D5 /* Item.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D75205C7E9D00E705D5 /* Item.h */; };
+		B24B7DFF205C873C00E705D5 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF5205C86DF00E705D5 /* Item.cpp */; };
+		B24B7E00205C874000E705D5 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEC205C86A100E705D5 /* Room.cpp */; };
+		B24B7E01205C874400E705D5 /* Room.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D7E205C7E9E00E705D5 /* Room.h */; };
+		B24B7E02205C874900E705D5 /* Generation.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D7A205C7E9E00E705D5 /* Generation.h */; };
+		B24B7E03205C874C00E705D5 /* Generation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF2205C86C200E705D5 /* Generation.cpp */; };
+		B24B7E04205C875000E705D5 /* Dungeon.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D7F205C7E9E00E705D5 /* Dungeon.h */; };
+		B24B7E05205C875300E705D5 /* Dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEE205C86A900E705D5 /* Dungeon.cpp */; };
+		B24B7E06205C875700E705D5 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEA205C869700E705D5 /* Character.cpp */; };
+		B24B7E07205C875A00E705D5 /* Character.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D79205C7E9E00E705D5 /* Character.h */; };
+		B24B7E08205C875F00E705D5 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF7205C86E700E705D5 /* Exceptions.cpp */; };
+		B24B7E09205C876200E705D5 /* Exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D7D205C7E9E00E705D5 /* Exceptions.h */; };
+		B24B7E1A205C8B4E00E705D5 /* help.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24B7D78205C7E9E00E705D5 /* help.bin */; };
+		B24B7E1B205C8B4E00E705D5 /* walls.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24B7D77205C7E9D00E705D5 /* walls.bin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B24B7E0A205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DDD205C836F00E705D5;
+			remoteInfo = CharacterLib;
+		};
+		B24B7E0C205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DD5205C836A00E705D5;
+			remoteInfo = DungeonLib;
+		};
+		B24B7E0E205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DE5205C837900E705D5;
+			remoteInfo = ExceptionLib;
+		};
+		B24B7E10205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DCD205C836200E705D5;
+			remoteInfo = GenerationLib;
+		};
+		B24B7E12205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DBD205C835200E705D5;
+			remoteInfo = ItemLib;
+		};
+		B24B7E14205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DAD205C833A00E705D5;
+			remoteInfo = MonsterLib;
+		};
+		B24B7E16205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DC5205C835C00E705D5;
+			remoteInfo = RoomLib;
+		};
+		B24B7E18205C8AF900E705D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24B7D62205C7E4200E705D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24B7DA5205C830600E705D5;
+			remoteInfo = RoomObjectLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B24B7D68205C7E4200E705D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				B24B7E1A205C8B4E00E705D5 /* help.bin in CopyFiles */,
+				B24B7E1B205C8B4E00E705D5 /* walls.bin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B24B7D6A205C7E4200E705D5 /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7D75205C7E9D00E705D5 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		B24B7D76205C7E9D00E705D5 /* RoomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomObject.h; sourceTree = "<group>"; };
+		B24B7D77205C7E9D00E705D5 /* walls.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = walls.bin; sourceTree = "<group>"; };
+		B24B7D78205C7E9E00E705D5 /* help.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = help.bin; sourceTree = "<group>"; };
+		B24B7D79205C7E9E00E705D5 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		B24B7D7A205C7E9E00E705D5 /* Generation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generation.h; sourceTree = "<group>"; };
+		B24B7D7B205C7E9E00E705D5 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		B24B7D7C205C7E9E00E705D5 /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		B24B7D7D205C7E9E00E705D5 /* Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exceptions.h; sourceTree = "<group>"; };
+		B24B7D7E205C7E9E00E705D5 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		B24B7D7F205C7E9E00E705D5 /* Dungeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dungeon.h; sourceTree = "<group>"; };
+		B24B7D80205C7F3500E705D5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B24B7D9B205C81D400E705D5 /* RoomObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RoomObject.cpp; path = ../RoomObjectLib/RoomObject.cpp; sourceTree = "<group>"; };
+		B24B7DA6205C830600E705D5 /* libRoomObjectLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRoomObjectLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DAE205C833A00E705D5 /* libMonsterLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMonsterLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DBE205C835200E705D5 /* libItemLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libItemLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DC6205C835C00E705D5 /* libRoomLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRoomLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DCE205C836200E705D5 /* libGenerationLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGenerationLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DD6205C836A00E705D5 /* libDungeonLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDungeonLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DDE205C836F00E705D5 /* libCharacterLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCharacterLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DE6205C837900E705D5 /* libExceptionLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExceptionLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B7DEA205C869700E705D5 /* Character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Character.cpp; path = ../CharacterLib/Character.cpp; sourceTree = "<group>"; };
+		B24B7DEC205C86A100E705D5 /* Room.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Room.cpp; path = ../RoomLib/Room.cpp; sourceTree = "<group>"; };
+		B24B7DEE205C86A900E705D5 /* Dungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dungeon.cpp; path = ../DungeonLib/Dungeon.cpp; sourceTree = "<group>"; };
+		B24B7DF0205C86B300E705D5 /* Monster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Monster.cpp; path = ../MonsterLib/Monster.cpp; sourceTree = "<group>"; };
+		B24B7DF2205C86C200E705D5 /* Generation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Generation.cpp; path = ../GenerationLib/Generation.cpp; sourceTree = "<group>"; };
+		B24B7DF5205C86DF00E705D5 /* Item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Item.cpp; path = ../ItemLib/Item.cpp; sourceTree = "<group>"; };
+		B24B7DF7205C86E700E705D5 /* Exceptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Exceptions.cpp; path = ../ExceptionLib/Exceptions.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B24B7D67205C7E4200E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DA3205C830600E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DAB205C833A00E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DBB205C835200E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DC3205C835C00E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DCB205C836200E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DD3205C836A00E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DDB205C836F00E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DE3205C837900E705D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B24B7D61205C7E4200E705D5 = {
+			isa = PBXGroup;
+			children = (
+				B24B7DA1205C826C00E705D5 /* Source */,
+				B24B7DA0205C824300E705D5 /* Headers */,
+				B24B7D80205C7F3500E705D5 /* main.cpp */,
+				B24B7D78205C7E9E00E705D5 /* help.bin */,
+				B24B7D77205C7E9D00E705D5 /* walls.bin */,
+				B24B7D6B205C7E4200E705D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B24B7D6B205C7E4200E705D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B24B7D6A205C7E4200E705D5 /* Game */,
+				B24B7DA6205C830600E705D5 /* libRoomObjectLib.a */,
+				B24B7DAE205C833A00E705D5 /* libMonsterLib.a */,
+				B24B7DBE205C835200E705D5 /* libItemLib.a */,
+				B24B7DC6205C835C00E705D5 /* libRoomLib.a */,
+				B24B7DCE205C836200E705D5 /* libGenerationLib.a */,
+				B24B7DD6205C836A00E705D5 /* libDungeonLib.a */,
+				B24B7DDE205C836F00E705D5 /* libCharacterLib.a */,
+				B24B7DE6205C837900E705D5 /* libExceptionLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B24B7DA0205C824300E705D5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B24B7D79205C7E9E00E705D5 /* Character.h */,
+				B24B7D7F205C7E9E00E705D5 /* Dungeon.h */,
+				B24B7D7D205C7E9E00E705D5 /* Exceptions.h */,
+				B24B7D7A205C7E9E00E705D5 /* Generation.h */,
+				B24B7D75205C7E9D00E705D5 /* Item.h */,
+				B24B7D7B205C7E9E00E705D5 /* LinkedList.h */,
+				B24B7D7C205C7E9E00E705D5 /* Monster.h */,
+				B24B7D7E205C7E9E00E705D5 /* Room.h */,
+				B24B7D76205C7E9D00E705D5 /* RoomObject.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		B24B7DA1205C826C00E705D5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B24B7DEA205C869700E705D5 /* Character.cpp */,
+				B24B7DEE205C86A900E705D5 /* Dungeon.cpp */,
+				B24B7DF7205C86E700E705D5 /* Exceptions.cpp */,
+				B24B7DF2205C86C200E705D5 /* Generation.cpp */,
+				B24B7DF5205C86DF00E705D5 /* Item.cpp */,
+				B24B7DF0205C86B300E705D5 /* Monster.cpp */,
+				B24B7DEC205C86A100E705D5 /* Room.cpp */,
+				B24B7D9B205C81D400E705D5 /* RoomObject.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B24B7DA4205C830600E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7DFA205C870600E705D5 /* RoomObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DAC205C833A00E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7DFC205C871B00E705D5 /* Monster.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DBC205C835200E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7DFE205C872A00E705D5 /* Item.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DC4205C835C00E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E01205C874400E705D5 /* Room.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DCC205C836200E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E02205C874900E705D5 /* Generation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DD4205C836A00E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E04205C875000E705D5 /* Dungeon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DDC205C836F00E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E07205C875A00E705D5 /* Character.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DE4205C837900E705D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E09205C876200E705D5 /* Exceptions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B24B7D69205C7E4200E705D5 /* Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7D71205C7E4200E705D5 /* Build configuration list for PBXNativeTarget "Game" */;
+			buildPhases = (
+				B24B7D66205C7E4200E705D5 /* Sources */,
+				B24B7D67205C7E4200E705D5 /* Frameworks */,
+				B24B7D68205C7E4200E705D5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B24B7E0B205C8AF900E705D5 /* PBXTargetDependency */,
+				B24B7E0D205C8AF900E705D5 /* PBXTargetDependency */,
+				B24B7E0F205C8AF900E705D5 /* PBXTargetDependency */,
+				B24B7E11205C8AF900E705D5 /* PBXTargetDependency */,
+				B24B7E13205C8AF900E705D5 /* PBXTargetDependency */,
+				B24B7E15205C8AF900E705D5 /* PBXTargetDependency */,
+				B24B7E17205C8AF900E705D5 /* PBXTargetDependency */,
+				B24B7E19205C8AF900E705D5 /* PBXTargetDependency */,
+			);
+			name = Game;
+			productName = Game;
+			productReference = B24B7D6A205C7E4200E705D5 /* Game */;
+			productType = "com.apple.product-type.tool";
+		};
+		B24B7DA5205C830600E705D5 /* RoomObjectLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DA7205C830600E705D5 /* Build configuration list for PBXNativeTarget "RoomObjectLib" */;
+			buildPhases = (
+				B24B7DA2205C830600E705D5 /* Sources */,
+				B24B7DA3205C830600E705D5 /* Frameworks */,
+				B24B7DA4205C830600E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoomObjectLib;
+			productName = RoomObjectLib;
+			productReference = B24B7DA6205C830600E705D5 /* libRoomObjectLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24B7DAD205C833A00E705D5 /* MonsterLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DAF205C833A00E705D5 /* Build configuration list for PBXNativeTarget "MonsterLib" */;
+			buildPhases = (
+				B24B7DAA205C833A00E705D5 /* Sources */,
+				B24B7DAB205C833A00E705D5 /* Frameworks */,
+				B24B7DAC205C833A00E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonsterLib;
+			productName = MonsterLib;
+			productReference = B24B7DAE205C833A00E705D5 /* libMonsterLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24B7DBD205C835200E705D5 /* ItemLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DBF205C835200E705D5 /* Build configuration list for PBXNativeTarget "ItemLib" */;
+			buildPhases = (
+				B24B7DBA205C835200E705D5 /* Sources */,
+				B24B7DBB205C835200E705D5 /* Frameworks */,
+				B24B7DBC205C835200E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItemLib;
+			productName = ItemLib;
+			productReference = B24B7DBE205C835200E705D5 /* libItemLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24B7DC5205C835C00E705D5 /* RoomLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DC7205C835C00E705D5 /* Build configuration list for PBXNativeTarget "RoomLib" */;
+			buildPhases = (
+				B24B7DC2205C835C00E705D5 /* Sources */,
+				B24B7DC3205C835C00E705D5 /* Frameworks */,
+				B24B7DC4205C835C00E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoomLib;
+			productName = RoomLib;
+			productReference = B24B7DC6205C835C00E705D5 /* libRoomLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24B7DCD205C836200E705D5 /* GenerationLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DCF205C836200E705D5 /* Build configuration list for PBXNativeTarget "GenerationLib" */;
+			buildPhases = (
+				B24B7DCA205C836200E705D5 /* Sources */,
+				B24B7DCB205C836200E705D5 /* Frameworks */,
+				B24B7DCC205C836200E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenerationLib;
+			productName = GenerationLib;
+			productReference = B24B7DCE205C836200E705D5 /* libGenerationLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24B7DD5205C836A00E705D5 /* DungeonLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DD7205C836A00E705D5 /* Build configuration list for PBXNativeTarget "DungeonLib" */;
+			buildPhases = (
+				B24B7DD2205C836A00E705D5 /* Sources */,
+				B24B7DD3205C836A00E705D5 /* Frameworks */,
+				B24B7DD4205C836A00E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DungeonLib;
+			productName = DungeonLib;
+			productReference = B24B7DD6205C836A00E705D5 /* libDungeonLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24B7DDD205C836F00E705D5 /* CharacterLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DDF205C836F00E705D5 /* Build configuration list for PBXNativeTarget "CharacterLib" */;
+			buildPhases = (
+				B24B7DDA205C836F00E705D5 /* Sources */,
+				B24B7DDB205C836F00E705D5 /* Frameworks */,
+				B24B7DDC205C836F00E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CharacterLib;
+			productName = CharacterLib;
+			productReference = B24B7DDE205C836F00E705D5 /* libCharacterLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24B7DE5205C837900E705D5 /* ExceptionLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24B7DE7205C837900E705D5 /* Build configuration list for PBXNativeTarget "ExceptionLib" */;
+			buildPhases = (
+				B24B7DE2205C837900E705D5 /* Sources */,
+				B24B7DE3205C837900E705D5 /* Frameworks */,
+				B24B7DE4205C837900E705D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExceptionLib;
+			productName = ExceptionLib;
+			productReference = B24B7DE6205C837900E705D5 /* libExceptionLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B24B7D62205C7E4200E705D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Joshua Kuan";
+				TargetAttributes = {
+					B24B7D69205C7E4200E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DA5205C830600E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DAD205C833A00E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DBD205C835200E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DC5205C835C00E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DCD205C836200E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DD5205C836A00E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DDD205C836F00E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B24B7DE5205C837900E705D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B24B7D65205C7E4200E705D5 /* Build configuration list for PBXProject "Game" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B24B7D61205C7E4200E705D5;
+			productRefGroup = B24B7D6B205C7E4200E705D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B24B7D69205C7E4200E705D5 /* Game */,
+				B24B7DDD205C836F00E705D5 /* CharacterLib */,
+				B24B7DD5205C836A00E705D5 /* DungeonLib */,
+				B24B7DE5205C837900E705D5 /* ExceptionLib */,
+				B24B7DCD205C836200E705D5 /* GenerationLib */,
+				B24B7DBD205C835200E705D5 /* ItemLib */,
+				B24B7DAD205C833A00E705D5 /* MonsterLib */,
+				B24B7DC5205C835C00E705D5 /* RoomLib */,
+				B24B7DA5205C830600E705D5 /* RoomObjectLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B24B7D66205C7E4200E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7DF6205C86DF00E705D5 /* Item.cpp in Sources */,
+				B24B7DEF205C86A900E705D5 /* Dungeon.cpp in Sources */,
+				B24B7DF3205C86C200E705D5 /* Generation.cpp in Sources */,
+				B24B7DED205C86A100E705D5 /* Room.cpp in Sources */,
+				B24B7DF4205C86D000E705D5 /* RoomObject.cpp in Sources */,
+				B24B7DF8205C86E700E705D5 /* Exceptions.cpp in Sources */,
+				B24B7DF1205C86B300E705D5 /* Monster.cpp in Sources */,
+				B24B7D81205C7F3500E705D5 /* main.cpp in Sources */,
+				B24B7DEB205C869700E705D5 /* Character.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DA2205C830600E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7DF9205C86FF00E705D5 /* RoomObject.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DAA205C833A00E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7DFB205C871600E705D5 /* Monster.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DBA205C835200E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7DFF205C873C00E705D5 /* Item.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DC2205C835C00E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E00205C874000E705D5 /* Room.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DCA205C836200E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E03205C874C00E705D5 /* Generation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DD2205C836A00E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E05205C875300E705D5 /* Dungeon.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DDA205C836F00E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E06205C875700E705D5 /* Character.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24B7DE2205C837900E705D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24B7E08205C875F00E705D5 /* Exceptions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B24B7E0B205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DDD205C836F00E705D5 /* CharacterLib */;
+			targetProxy = B24B7E0A205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+		B24B7E0D205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DD5205C836A00E705D5 /* DungeonLib */;
+			targetProxy = B24B7E0C205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+		B24B7E0F205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DE5205C837900E705D5 /* ExceptionLib */;
+			targetProxy = B24B7E0E205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+		B24B7E11205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DCD205C836200E705D5 /* GenerationLib */;
+			targetProxy = B24B7E10205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+		B24B7E13205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DBD205C835200E705D5 /* ItemLib */;
+			targetProxy = B24B7E12205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+		B24B7E15205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DAD205C833A00E705D5 /* MonsterLib */;
+			targetProxy = B24B7E14205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+		B24B7E17205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DC5205C835C00E705D5 /* RoomLib */;
+			targetProxy = B24B7E16205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+		B24B7E19205C8AF900E705D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24B7DA5205C830600E705D5 /* RoomObjectLib */;
+			targetProxy = B24B7E18205C8AF900E705D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B24B7D6F205C7E4200E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_FILE_PATH)/../../Game/";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B24B7D70205C7E4200E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_FILE_PATH)/../../Game/";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B24B7D72205C7E4200E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../Game/bin/Debug/";
+				DEVELOPMENT_TEAM = YN83627A85;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_FILE_PATH)/../../libs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7D73205C7E4200E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_FILE_PATH)/../../libs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DA8205C830600E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DA9205C830600E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DB0205C833A00E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DB1205C833A00E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DC0205C835200E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DC1205C835200E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DC8205C835C00E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DC9205C835C00E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DD0205C836200E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DD1205C836200E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DD8205C836A00E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DD9205C836A00E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DE0205C836F00E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DE1205C836F00E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B24B7DE8205C837900E705D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B24B7DE9205C837900E705D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN83627A85;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B24B7D65205C7E4200E705D5 /* Build configuration list for PBXProject "Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7D6F205C7E4200E705D5 /* Debug */,
+				B24B7D70205C7E4200E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7D71205C7E4200E705D5 /* Build configuration list for PBXNativeTarget "Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7D72205C7E4200E705D5 /* Debug */,
+				B24B7D73205C7E4200E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DA7205C830600E705D5 /* Build configuration list for PBXNativeTarget "RoomObjectLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DA8205C830600E705D5 /* Debug */,
+				B24B7DA9205C830600E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DAF205C833A00E705D5 /* Build configuration list for PBXNativeTarget "MonsterLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DB0205C833A00E705D5 /* Debug */,
+				B24B7DB1205C833A00E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DBF205C835200E705D5 /* Build configuration list for PBXNativeTarget "ItemLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DC0205C835200E705D5 /* Debug */,
+				B24B7DC1205C835200E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DC7205C835C00E705D5 /* Build configuration list for PBXNativeTarget "RoomLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DC8205C835C00E705D5 /* Debug */,
+				B24B7DC9205C835C00E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DCF205C836200E705D5 /* Build configuration list for PBXNativeTarget "GenerationLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DD0205C836200E705D5 /* Debug */,
+				B24B7DD1205C836200E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DD7205C836A00E705D5 /* Build configuration list for PBXNativeTarget "DungeonLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DD8205C836A00E705D5 /* Debug */,
+				B24B7DD9205C836A00E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DDF205C836F00E705D5 /* Build configuration list for PBXNativeTarget "CharacterLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DE0205C836F00E705D5 /* Debug */,
+				B24B7DE1205C836F00E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24B7DE7205C837900E705D5 /* Build configuration list for PBXNativeTarget "ExceptionLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B7DE8205C837900E705D5 /* Debug */,
+				B24B7DE9205C837900E705D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B24B7D62205C7E4200E705D5 /* Project object */;
+}
