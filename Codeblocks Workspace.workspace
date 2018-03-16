@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_workspace_file>
 	<Workspace title="Workspace">
-		<Project filename="Game/Game.cbp" />
 		<Project filename="CharacterLib/CharacterLib.cbp" />
 		<Project filename="DungeonLib/DungeonLib.cbp" />
 		<Project filename="ExceptionLib/ExceptionLib.cbp" />
@@ -10,5 +9,6 @@
 		<Project filename="MonsterLib/MonsterLib.cbp" />
 		<Project filename="RoomLib/RoomLib.cbp" />
 		<Project filename="RoomObjectLib/RoomObjectLib.cbp" />
+		<Project filename="Game/Game.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
