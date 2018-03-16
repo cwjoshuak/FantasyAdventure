@@ -23,7 +23,7 @@ Room::Room(int row, int col, unsigned char wall)
 
 /********************************************************************************************
  Destructor
- Releases dynamic memory used by monster, room object and item objects.
+ Releases dynamic memory used by monster, room object and item list.
  *******************************************************************************************/
 Room::~Room()
 {
@@ -31,20 +31,115 @@ Room::~Room()
     {
         delete monsterPtr;
     }
-
     if (roomObjectPtr)
     {
         delete roomObjectPtr;
     }
-
     if (!items.empty())
     {
-        for (auto i = 0; i < items.size(); i++)
+        for (auto listIt = items.cbegin(); listIt != items.cend(); ++listIt)
         {
-            delete items[i];
+            delete *listIt;
         }
         items.clear();
     }
+}
+
+/********************************************************************************************
+ checkEast
+ Returns true if movement west is possible. (i.e. no wall exists to the north of player's
+ position) Wall data is stored in the last nibble of an unsigned char in the following bit
+ pattern: 0000 W E S N
+ *******************************************************************************************/
+bool Room::checkEast() const
+{
+    //Mask: 0000 0100
+    const unsigned char MASK = 4;
+    
+    if (walls & MASK)
+    {
+        return false;
+    }
+    
+    return true;
+}
+
+/********************************************************************************************
+ checkNorth
+ Returns true if movement north is possible. (i.e. no wall exists to the north of player's
+ position) Wall data is stored in the last nibble of an unsigned char in the following bit
+ pattern: 0000 W E S N
+ *******************************************************************************************/
+bool Room::checkNorth() const
+{
+    //Mask: 0000 0001
+    const unsigned char MASK = 1;
+    
+    if (walls & MASK)
+    {
+        return false;
+    }
+    
+    return true;
+}
+
+/********************************************************************************************
+ checkSouth
+ Returns true if movement south is possible. (i.e. no wall exists to the north of player's
+ position) Wall data is stored in the last nibble of an unsigned char in the following bit
+ pattern: 0000 W E S N
+ *******************************************************************************************/
+bool Room::checkSouth() const
+{
+    //Mask: 0000 0010
+    const unsigned char MASK = 2;
+    
+    if (walls & MASK)
+    {
+        return false;
+    }
+    
+    return true;
+}
+
+/********************************************************************************************
+ checkWest
+ Returns true if movement west is possible. (i.e. no wall exists to the north of player's
+ position) Wall data is stored in the last nibble of an unsigned char in the following bit
+ pattern: 0000 W E S N
+ *******************************************************************************************/
+bool Room::checkWest() const
+{
+    //Mask: 0000 1000
+    const unsigned char MASK = 8;
+    
+    if (walls & MASK)
+    {
+        return false;
+    }
+    
+    return true;
+}
+
+/********************************************************************************************
+ contains
+ Searches items list for a specific item. Returns true if the item is found.
+ *******************************************************************************************/
+bool Room::contains(string s)
+{
+    if (!(items.empty()))
+    {
+        list<Item*>::const_iterator it;
+        for (it = items.cbegin(); it != items.cend(); ++it)
+        {
+            if ((*it)->name() == s)
+            {
+                return true;
+            }
+        }
+    }
+    
+    return false;
 }
 
 /********************************************************************************************
@@ -56,15 +151,17 @@ void Room::setCoordinates (int r, int c)
     coordinates.row = r;
     coordinates.col = c;
 }
-
 /********************************************************************************************
- setWalls
- Sets room's wall data stored as an unsigned char.
+ setItem
+ Adds an Item pointer to the list of items.
  *******************************************************************************************/
-void Room::setWalls(unsigned char w)
+void Room::setItem(Item* iptr)
 {
-    walls = w;
-};
+    if (iptr != nullptr)
+    {
+        items.push_back(iptr);
+    }
+}
 
 /********************************************************************************************
  setMonsterPtr
@@ -85,35 +182,13 @@ void Room::setRoomObjectPtr(RoomObject* roptr)
 }
 
 /********************************************************************************************
- setItem
- Adds an Item pointer to the vector of items.
+ setWalls
+ Sets room's wall data stored as an unsigned char.
  *******************************************************************************************/
-void Room::setItem(Item* iptr)
+void Room::setWalls(unsigned char w)
 {
-    if (iptr != nullptr)
-    {
-        items.push_back(iptr);
-    }
-}
-
-/********************************************************************************************
- removeMonster
- Removes a monster from the room by deleting the monster object and setting MonsterPtr to NULL.
- *******************************************************************************************/
-void Room::removeMonster()
-{
-    delete monsterPtr;
-    monsterPtr = nullptr;
-}
-
-/********************************************************************************************
- getRow
- Returns row coordinate.
- *******************************************************************************************/
-int Room::getRow() const
-{
-    return coordinates.row;
-}
+    walls = w;
+};
 
 /********************************************************************************************
  getCol
@@ -125,21 +200,12 @@ int Room::getCol() const
 }
 
 /********************************************************************************************
- getRoomCoordinates
- Returns a reference to a struct with room coordinate.
+ getItems
+ Returns a list of item pointers if at least one item object is present in the room.
  *******************************************************************************************/
-const RoomCoordinates& Room::getRoomCoordinates() const
+list<Item*> Room::getItems() const
 {
-    return coordinates;
-}
-
-/********************************************************************************************
- getWalls
- Returns an unsigned char storing wall data.
- *******************************************************************************************/
-const unsigned char Room::getWalls() const
-{
-    return walls;
+    return items;
 }
 
 /********************************************************************************************
@@ -152,24 +218,6 @@ Monster* Room::getMonsterPtr() const
 }
 
 /********************************************************************************************
- getRoomObjectPtr
- Returns a pointer to a monster if monster is present in the room. Returns nullptr otherwise.
- *******************************************************************************************/
-RoomObject* Room::getRoomObjectPtr() const
-{
-    return roomObjectPtr;
-}
-
-/********************************************************************************************
- getItems
- Returns a vector of item pointers if at least one item object is present in the room.
- *******************************************************************************************/
-vector<Item*> Room::getItems() const
-{
-    return items;
-}
-
-/********************************************************************************************
  getRoom
  Returns a pointer to the current room.
  *******************************************************************************************/
@@ -179,128 +227,82 @@ Room& Room::getRoom()
 }
 
 /********************************************************************************************
- checkNorth
- Returns true if movement north is possible. (i.e. no wall exists to the north of player's
- position) Wall data is stored in the last nibble of an unsigned char in the following bit
- pattern: 0000 W E S N
+ getRow
+ Returns row coordinate.
  *******************************************************************************************/
-bool Room::checkNorth() const
+int Room::getRow() const
 {
-    //Mask: 0000 0001
-    const unsigned char MASK = 1;
-
-    if (walls & MASK)
-    {
-        return false;
-    }
-
-    return true;
+    return coordinates.row;
 }
 
 /********************************************************************************************
- checkSouth
- Returns true if movement south is possible. (i.e. no wall exists to the north of player's
- position) Wall data is stored in the last nibble of an unsigned char in the following bit
- pattern: 0000 W E S N
+ getRoomCoordinates
+ Returns a reference to a struct with room coordinate.
  *******************************************************************************************/
-bool Room::checkSouth() const
+const RoomCoordinates& Room::getRoomCoordinates() const
 {
-    //Mask: 0000 0010
-    const unsigned char MASK = 2;
-
-    if (walls & MASK)
-    {
-        return false;
-    }
-
-    return true;
+    return coordinates;
 }
 
 /********************************************************************************************
- checkEast
- Returns true if movement west is possible. (i.e. no wall exists to the north of player's
- position) Wall data is stored in the last nibble of an unsigned char in the following bit
- pattern: 0000 W E S N
+ getRoomObjectPtr
+ Returns a pointer to a monster if monster is present in the room. Returns nullptr otherwise.
  *******************************************************************************************/
-bool Room::checkEast() const
+RoomObject* Room::getRoomObjectPtr() const
 {
-    //Mask: 0000 0100
-    const unsigned char MASK = 4;
-
-    if (walls & MASK)
-    {
-        return false;
-    }
-
-    return true;
+    return roomObjectPtr;
 }
 
 /********************************************************************************************
- checkWest
- Returns true if movement west is possible. (i.e. no wall exists to the north of player's
- position) Wall data is stored in the last nibble of an unsigned char in the following bit
- pattern: 0000 W E S N
+ getWalls
+ Returns an unsigned char storing wall data.
  *******************************************************************************************/
-bool Room::checkWest() const
+const unsigned char Room::getWalls() const
 {
-    //Mask: 0000 1000
-    const unsigned char MASK = 8;
-
-    if (walls & MASK)
-    {
-        return false;
-    }
-
-    return true;
-}
-
-/********************************************************************************************
- contains
- Searches items vector for a specific item. Returns true if the item is found.
- *******************************************************************************************/
-bool Room::contains(string s)
-{
-    if (!(items.empty()))
-    {
-        vector<Item*>::const_iterator it;
-        for (it = items.cbegin(); it != items.cend(); ++it)
-        {
-            if ((*it)->name() == s)
-            {
-                return true;
-            }
-        }
-    }
-
-    return false;
+    return walls;
 }
 
 /********************************************************************************************
  removeItem
- Removes a specific item from the vector of items. Returns nullptr if item is not found.
+ Searches for and removes a specific item from the list of items. If item is found, returns
+ a pointer to the item. If item is not found, returns nullptr.
  *******************************************************************************************/
 Item* Room::removeItem(string anItem)
 {
-
+    Item* temp = nullptr;       //Store pointer to the searched item
+    //cout << "temp: " << temp << endl;             //DEBUG
     if (!(items.empty()))
     {
-        //Step through the vector and search for the item
-        vector<Item*>::const_iterator it;
+        //Step through the list and search for the item
+        list<Item*>::const_iterator it;
         for (it = items.cbegin(); it != items.cend(); ++it)
         {
             if ((*it)->name() == anItem)
             {
-                //If you found the item erase it from the items vector
+                //If found, store item pointer to be returned
+                temp = *it;
+                
+                //Erase the item from list
                 items.erase(it);
-
-                //Return pointer to the item
-                return *it;
+                break;
             }
         }
     }
-    //If item is not found, return nullptr
-    return nullptr;
+
+    //Return pointer to the searched item
+    return temp;
 }
+
+/********************************************************************************************
+ removeMonster
+ Removes a monster from the room by deleting the monster object and setting MonsterPtr to NULL.
+ *******************************************************************************************/
+void Room::removeMonster()
+{
+    delete monsterPtr;
+    monsterPtr = nullptr;
+}
+
 
 /********************************************************************************************
  Overloaded ostream<< Operator
@@ -336,7 +338,7 @@ ostream& operator<<(ostream& strm, const Room& room)
 
                 if (room.items.size() == 1)
                 {
-                    strm << room.items[0]->name() << " : " << room.items[0]->description() << endl;
+                    strm << room.items.front()->name() << " : " << room.items.front()->description() << endl;
                 }
                 else
                 {
