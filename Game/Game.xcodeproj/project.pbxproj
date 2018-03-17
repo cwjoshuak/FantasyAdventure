@@ -748,7 +748,7 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_FILE_PATH)/../../Game/";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
