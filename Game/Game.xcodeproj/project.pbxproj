@@ -805,27 +805,32 @@
 		B24B7D72205C7E4200E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../Game/bin/Debug/";
 				DEVELOPMENT_TEAM = YN83627A85;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_FILE_PATH)/../../libs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		B24B7D73205C7E4200E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_FILE_PATH)/../../libs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 		B24B7DA8205C830600E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -837,6 +842,7 @@
 		B24B7DA9205C830600E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
@@ -847,6 +853,7 @@
 		B24B7DB0205C833A00E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -858,6 +865,7 @@
 		B24B7DB1205C833A00E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
@@ -868,6 +876,7 @@
 		B24B7DC0205C835200E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -879,6 +888,7 @@
 		B24B7DC1205C835200E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
@@ -889,6 +899,7 @@
 		B24B7DC8205C835C00E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -900,6 +911,7 @@
 		B24B7DC9205C835C00E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
@@ -910,6 +922,7 @@
 		B24B7DD0205C836200E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -921,6 +934,7 @@
 		B24B7DD1205C836200E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
@@ -931,6 +945,7 @@
 		B24B7DD8205C836A00E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -942,6 +957,7 @@
 		B24B7DD9205C836A00E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
@@ -952,6 +968,7 @@
 		B24B7DE0205C836F00E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -963,6 +980,7 @@
 		B24B7DE1205C836F00E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
@@ -973,6 +991,7 @@
 		B24B7DE8205C837900E705D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_FILE_PATH)/../../libs";
 				DEVELOPMENT_TEAM = YN83627A85;
@@ -984,6 +1003,7 @@
 		B24B7DE9205C837900E705D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN83627A85;
 				EXECUTABLE_PREFIX = lib;
