@@ -1,12 +1,11 @@
 /*
  
- FantasyAdventure
+ PhantasyAdventure
  
- This simulation is a fantasy quest for a treasure.
+ This simulation is a phantasy quest for a treasure.
  You must navigate through the dungeon's labyrinth, collect three gems and kill the dragon boss to win your riches.
  Along the way, you will collect potions that heal you, equipment that strenghtens you and find maps, books and other
  objects that will help guide you toward your destination. You can also attack monsters and unlock more items of value.
- Type 'help' at any point of the program for guide on how to play.
  
  */
 
@@ -25,7 +24,7 @@ const int COLS = 10;
 const string commands[] = {"attack", "activate", "drop", "move", "pickup", "print", "use", "help", "quit", "/"};
 const int NUM_COMMANDS = 10;
 const string HELP_FILE = "help.bin";
-const string INTRO = "FantasyAdventure \n\nWelcome to the phantasy adventure game! In search for riches and personal glory you have arrived at this dark and abandoned\ndungeon full of dragons and other creatures that lurk from around all corners ready to attack you and stall your journey for\ngreatness. To find the treasure you will have to navigate through a labyrinth and slay monsters. Along the way you will find\nuseful hints that will guide you toward the room with the treasure as well as maps that will show you your location in\nrelation to the treasure room. You will collect items that will help you recover, kill monsters, and move closer to your goal.\n\nYou have 3 lives. Use them wisely!\n\n";
+const string INTRO = "AdventureGame \n\nWelcome to the phantasy adventure game! In search for riches and personal glory you have arrived at this dark and abandoned\ndungeon full of dragons and other creatures that lurk from around all corners ready to attack you and stall your journey for greatness. To find the treasure you will have to navigate through a labyrinth and slay monsters. Along the way you will find\nuseful hints that will guide you toward the room with the treasure as well as maps that will show you your location in\nrelation to the treasure room. You will collect items that will help you recover, kill monsters, and move closer to your goal.\n\nYou have 3 lives. Use them wisely!\n\n";
 bool again(Character*&);
 void initialize(Dungeon*&, Character*&, ifstream&);
 bool isInvalidChar(int i);
@@ -49,7 +48,6 @@ int main(void)
         {
             cout << INTRO;
             initialize(dungeon, c, helpFile);
-            cout << "Remember, you can type 'help' at any time you feel lost." << endl;
             restart = false;
         }
         cout << "Enter command: ";
