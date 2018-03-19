@@ -1,10 +1,8 @@
-//
-//  Character.hpp
-//  Character
-//
-//  Created by Khang Tran on 2/2/18.
-//  Copyright © 2018 Khang Tran and Joshua Kuan. All rights reserved.
-//
+/*
+ 
+ Specification file for the Character class.
+ 
+ */
 
 
 
@@ -131,6 +129,7 @@ public:
     /* Moving */
     void move(const std::string&) throw(AdventureErrors::InvalidMove);
 
+    /* Other */
     void activate(const std::string&) throw(AdventureErrors::MissingObject, AdventureErrors::CharacterDeath);
     void print() const;
 

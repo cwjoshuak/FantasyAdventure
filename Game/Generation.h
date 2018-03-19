@@ -34,9 +34,6 @@
  }
  END CODE SAMPLE */
 
-//  Created by Joshua Kuan on 02/03/2018.
-//  Copyright © 2018 Joshua Kuan. All rights reserved.
-//
 
 #ifndef Generation_h
 #define Generation_h

@@ -1,10 +1,8 @@
-//
-//  Generation.cpp
-//  Character
-//
-//  Created by Joshua Kuan on 02/03/2018.
-//  Copyright © 2018 Joshua Kuan. All rights reserved.
-//
+/*
+ 
+ Implementation file for the Generation class.
+ 
+ */
 
 #include "Generation.h"
 
