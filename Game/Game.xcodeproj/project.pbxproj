@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B24B7D81205C7F3500E705D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7D80205C7F3500E705D5 /* main.cpp */; };
-		B24B7DEB205C869700E705D5 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEA205C869700E705D5 /* Character.cpp */; };
-		B24B7DED205C86A100E705D5 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEC205C86A100E705D5 /* Room.cpp */; };
-		B24B7DEF205C86A900E705D5 /* Dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DEE205C86A900E705D5 /* Dungeon.cpp */; };
-		B24B7DF1205C86B300E705D5 /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF0205C86B300E705D5 /* Monster.cpp */; };
-		B24B7DF3205C86C200E705D5 /* Generation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF2205C86C200E705D5 /* Generation.cpp */; };
-		B24B7DF4205C86D000E705D5 /* RoomObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7D9B205C81D400E705D5 /* RoomObject.cpp */; };
-		B24B7DF6205C86DF00E705D5 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF5205C86DF00E705D5 /* Item.cpp */; };
-		B24B7DF8205C86E700E705D5 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF7205C86E700E705D5 /* Exceptions.cpp */; };
 		B24B7DF9205C86FF00E705D5 /* RoomObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7D9B205C81D400E705D5 /* RoomObject.cpp */; };
 		B24B7DFA205C870600E705D5 /* RoomObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D76205C7E9D00E705D5 /* RoomObject.h */; };
 		B24B7DFB205C871600E705D5 /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24B7DF0205C86B300E705D5 /* Monster.cpp */; };
@@ -34,6 +26,14 @@
 		B24B7E09205C876200E705D5 /* Exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B7D7D205C7E9E00E705D5 /* Exceptions.h */; };
 		B24B7E1A205C8B4E00E705D5 /* help.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24B7D78205C7E9E00E705D5 /* help.bin */; };
 		B24B7E1B205C8B4E00E705D5 /* walls.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24B7D77205C7E9D00E705D5 /* walls.bin */; };
+		B25DD6DD205CEA320048EF7D /* libCharacterLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DDE205C836F00E705D5 /* libCharacterLib.a */; };
+		B25DD6DE205CEA320048EF7D /* libDungeonLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DD6205C836A00E705D5 /* libDungeonLib.a */; };
+		B25DD6DF205CEA320048EF7D /* libExceptionLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DE6205C837900E705D5 /* libExceptionLib.a */; };
+		B25DD6E0205CEA320048EF7D /* libGenerationLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DCE205C836200E705D5 /* libGenerationLib.a */; };
+		B25DD6E1205CEA320048EF7D /* libItemLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DBE205C835200E705D5 /* libItemLib.a */; };
+		B25DD6E2205CEA320048EF7D /* libMonsterLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DAE205C833A00E705D5 /* libMonsterLib.a */; };
+		B25DD6E3205CEA320048EF7D /* libRoomLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DC6205C835C00E705D5 /* libRoomLib.a */; };
+		B25DD6E4205CEA320048EF7D /* libRoomObjectLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B7DA6205C830600E705D5 /* libRoomObjectLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +146,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25DD6DD205CEA320048EF7D /* libCharacterLib.a in Frameworks */,
+				B25DD6DE205CEA320048EF7D /* libDungeonLib.a in Frameworks */,
+				B25DD6DF205CEA320048EF7D /* libExceptionLib.a in Frameworks */,
+				B25DD6E0205CEA320048EF7D /* libGenerationLib.a in Frameworks */,
+				B25DD6E1205CEA320048EF7D /* libItemLib.a in Frameworks */,
+				B25DD6E2205CEA320048EF7D /* libMonsterLib.a in Frameworks */,
+				B25DD6E3205CEA320048EF7D /* libRoomLib.a in Frameworks */,
+				B25DD6E4205CEA320048EF7D /* libRoomObjectLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +225,7 @@
 				B24B7D78205C7E9E00E705D5 /* help.bin */,
 				B24B7D77205C7E9D00E705D5 /* walls.bin */,
 				B24B7D6B205C7E4200E705D5 /* Products */,
+				B25DD6DC205CEA320048EF7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +274,13 @@
 				B24B7D9B205C81D400E705D5 /* RoomObject.cpp */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		B25DD6DC205CEA320048EF7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,15 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24B7DF6205C86DF00E705D5 /* Item.cpp in Sources */,
-				B24B7DEF205C86A900E705D5 /* Dungeon.cpp in Sources */,
-				B24B7DF3205C86C200E705D5 /* Generation.cpp in Sources */,
-				B24B7DED205C86A100E705D5 /* Room.cpp in Sources */,
-				B24B7DF4205C86D000E705D5 /* RoomObject.cpp in Sources */,
-				B24B7DF8205C86E700E705D5 /* Exceptions.cpp in Sources */,
-				B24B7DF1205C86B300E705D5 /* Monster.cpp in Sources */,
 				B24B7D81205C7F3500E705D5 /* main.cpp in Sources */,
-				B24B7DEB205C869700E705D5 /* Character.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
