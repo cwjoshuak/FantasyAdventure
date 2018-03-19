@@ -47,7 +47,7 @@ Room::~Room()
 
 /********************************************************************************************
  checkEast
- Returns true if movement west is possible. (i.e. no wall exists to the north of player's
+ Returns true if movement west is possible. (i.e. no wall exists to the east of player's
  position) Wall data is stored in the last nibble of an unsigned char in the following bit
  pattern: 0000 W E S N
  *******************************************************************************************/
@@ -85,7 +85,7 @@ bool Room::checkNorth() const
 
 /********************************************************************************************
  checkSouth
- Returns true if movement south is possible. (i.e. no wall exists to the north of player's
+ Returns true if movement south is possible. (i.e. no wall exists to the south of player's
  position) Wall data is stored in the last nibble of an unsigned char in the following bit
  pattern: 0000 W E S N
  *******************************************************************************************/
@@ -104,7 +104,7 @@ bool Room::checkSouth() const
 
 /********************************************************************************************
  checkWest
- Returns true if movement west is possible. (i.e. no wall exists to the north of player's
+ Returns true if movement west is possible. (i.e. no wall exists to the west of player's
  position) Wall data is stored in the last nibble of an unsigned char in the following bit
  pattern: 0000 W E S N
  *******************************************************************************************/
@@ -237,7 +237,7 @@ int Room::getRow() const
 
 /********************************************************************************************
  getRoomCoordinates
- Returns a reference to a struct with room coordinate.
+ Returns a reference to a struct with room coordinates.
  *******************************************************************************************/
 const RoomCoordinates& Room::getRoomCoordinates() const
 {
@@ -246,7 +246,8 @@ const RoomCoordinates& Room::getRoomCoordinates() const
 
 /********************************************************************************************
  getRoomObjectPtr
- Returns a pointer to a monster if monster is present in the room. Returns nullptr otherwise.
+ Returns a pointer to a room object if a room object is present in the room.
+ Returns nullptr otherwise.
  *******************************************************************************************/
 RoomObject* Room::getRoomObjectPtr() const
 {
@@ -269,8 +270,7 @@ const unsigned char Room::getWalls() const
  *******************************************************************************************/
 Item* Room::removeItem(const std::string& anItem)
 {
-    Item* temp = nullptr;       //Store pointer to the searched item
-    //cout << "temp: " << temp << endl;             //DEBUG
+    Item* temp = nullptr;                               //Store pointer to the searched item
     if (!(items.empty()))
     {
         //Step through the list and search for the item

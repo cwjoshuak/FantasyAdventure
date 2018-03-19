@@ -4,9 +4,6 @@
  
  */
 
-
-#include <iostream>
-#include <string>
 #include "RoomObject.h"
 
 /**************************************************************************
@@ -68,9 +65,9 @@ void Book::use() const
 
 /**************************************************************************
  use
- Prints a message that it is being used.
+ Prints a message that the flare was used.
  **************************************************************************/
-Flare::Flare(std::string name, std::string description) :RoomObject(name, description) {}
+Flare::Flare(std::string name, std::string description) : RoomObject(name, description) {}
 void Flare::use() const
 {
     std::cout << std::endl;
@@ -80,7 +77,7 @@ void Flare::use() const
 }
 /**************************************************************************
  use
- Prints a message that it is being used.
+ Prints a message that the fountain was used.
  **************************************************************************/
 Fountain::Fountain(std::string name, std::string description) : RoomObject(name, description) {}
 void Fountain::use() const
@@ -92,9 +89,9 @@ void Fountain::use() const
 
 /**************************************************************************
  use
- Prints a message that it is being used.
+ Prints a message that the map was used.
  **************************************************************************/
-Map::Map(std::string name, std::string description) :RoomObject(name, description) {}
+Map::Map(std::string name, std::string description) : RoomObject(name, description) {}
 void Map::use() const
 {
     std::cout << "Looking at the map you see this: " << std::endl;
@@ -102,9 +99,9 @@ void Map::use() const
 
 /**************************************************************************
  use
- Prints that the treasure was used.
+ Prints a messages the the treasure has been activated.
  **************************************************************************/
-Treasure::Treasure(std::string name, std::string description) :RoomObject(name, description) {}
+Treasure::Treasure(std::string name, std::string description) : RoomObject(name, description) {}
 void Treasure::use() const
 {
     std::cout << "Congratulation! You won the game!" << std::endl;

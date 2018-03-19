@@ -34,8 +34,8 @@
 class Monster
 {
 protected:
-    std::string name;                    //stores monster name
-    std::string description;             //stores monster description
+    std::string name;                    //stores monster's name
+    std::string description;             //stores monster's description
     double strength;                     //stores monster's strength
     double health;                       //stores monster's health
     double luck;                         //stores monster's luck
@@ -147,7 +147,7 @@ public:
     double getAgility() const;
     
     //Pure virtual functions
-    /* Returns an int representing damage done to the character and causes character to drop one piece of eqipment */
+    /* Returns an int representing damage done to the character*/
     virtual int attack(double characterLuck) override;
 };
 
